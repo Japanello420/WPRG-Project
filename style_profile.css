@@ -1,0 +1,167 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ff9a03;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 125px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+.left-side-header {
+  display: flex;
+}
+
+.logo-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#header_logo {
+  height: 100px;
+  align-self: center;
+}
+
+a.btn {
+  background-color: #1e1e1e;
+  color: white;
+  text-decoration: none;
+  border: #1e1e1e;
+  box-shadow: 0 0 10px #121212;
+  border-radius: 10px;
+  padding: 5px;
+  align-self: flex-end;
+  margin: auto 0;
+}
+
+.contrast-switch {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-box {
+  text-align: center;
+}
+
+h1 {
+  color: #ff9a03;
+}
+
+h2 {
+  color: #ff9a03;
+}
+
+p {
+  text-align: left;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #ff9a03;
+  color: white;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+footer a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/*CSS dla paska powiadomień */
+.notifications-container {
+  position: relative;
+}
+
+.notifications-dropdown {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 300px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.notifications-dropdown.active {
+  display: block;
+}
+
+.notifications-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.notification-item {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.notifications-icon {
+  position: relative;
+}
+
+.notifications-icon img {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode .container {
+  background-color: #1e1e1e;
+}
+
+.dark-mode footer {
+  background-color: #333;
+}
+
+.dark-mode footer a {
+  color: #ccc;
+}
